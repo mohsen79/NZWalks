@@ -5,7 +5,7 @@ namespace NZWalks.Data;
 
 public class NZWalksDbContext(DbContextOptions dbContextOptions) : DbContext(dbContextOptions)
 {
-    DbSet<Region> Region { get; set; }
-    DbSet<Difficulty> Difficulty { get; set; }
-    DbSet<Walk> Walk { get; set; }
+    public DbSet<Region> Region { get; set; }
+    public DbSet<Difficulty> Difficulty { get; set; }
+    public DbSet<Walk> Walk { get; set; }
 }
